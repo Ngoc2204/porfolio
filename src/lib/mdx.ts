@@ -34,6 +34,7 @@ function readMDXFile(filePath: string) {
 
 export function getBlogPosts() {
   const dir = getBlogsDirectory();
+  if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir)
     .filter((file) => path.extname(file) === ".mdx")
     .map((file) => ({
