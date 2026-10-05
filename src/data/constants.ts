@@ -27,6 +27,11 @@ export enum SkillNames {
   VERCEL = "vercel",
   GIT = "git",
   MONGODB = "mongodb",
+  EXPRESS = "express",
+  FIREBASE = "firebase",
+  VIM = "vim",
+  PRETTIER = "prettier",
+  NPM = "npm",
 }
 export type Skill = { id: number; name: string; label: string; shortDescription: string; color: string; icon: string; };
 export const SKILLS: Record<SkillNames, Skill> = {
@@ -58,8 +63,13 @@ export const SKILLS: Record<SkillNames, Skill> = {
   [SkillNames.VERCEL]: {"id":26,"name":"vercel","label":"Vercel","shortDescription":"Nền tảng triển khai portfolio Next.js với preview deployments và production deployments.","color":"#ffffff","icon":"/assets/logos/vercel-mono.svg"},
   [SkillNames.GIT]: {"id":27,"name":"git","label":"Git","shortDescription":"Hệ thống quản lý phiên bản phân tán cho theo dõi thay đổi mã nguồn.","color":"#f05032","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"},
   [SkillNames.MONGODB]: {"id":28,"name":"mongodb","label":"MongoDB","shortDescription":"Cơ sở dữ liệu NoSQL dạng document.","color":"#47a248","icon":"/assets/logos/mongodb-mono.svg"},
+  [SkillNames.EXPRESS]: {"id":29,"name":"express","label":"Express.js","shortDescription":"Framework tối giản cho Node.js, dùng để xây dựng web server và REST API.","color":"#ffffff","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"},
+  [SkillNames.FIREBASE]: {"id":30,"name":"firebase","label":"Firebase","shortDescription":"Nền tảng dịch vụ backend của Google; icon trong model đại diện cho Firebase.","color":"#ffca28","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"},
+  [SkillNames.VIM]: {"id":31,"name":"vim","label":"Vim","shortDescription":"Trình soạn thảo văn bản trong terminal, điều khiển chủ yếu bằng bàn phím.","color":"#019733","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg"},
+  [SkillNames.PRETTIER]: {"id":32,"name":"prettier","label":"Prettier","shortDescription":"Định dạng mã nguồn tự động theo quy tắc nhất quán.","color":"#f7b93e","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prettier/prettier-original.svg"},
+  [SkillNames.NPM]: {"id":33,"name":"npm","label":"npm","shortDescription":"Trình quản lý package mặc định phổ biến trong hệ sinh thái Node.js.","color":"#cb3837","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"},
 };
-export const ADDITIONAL_SKILLS = [SkillNames.NESTJS, SkillNames.LARAVEL, SkillNames.FLUTTER, SkillNames.DART, SkillNames.GETX, SkillNames.MYSQL, SkillNames.PRISMA, SkillNames.REDIS, SkillNames.TURBOREPO, SkillNames.PYTHON, SkillNames.VUE, SkillNames.VERCEL, SkillNames.GIT, SkillNames.MONGODB];
+export const ADDITIONAL_SKILLS = [SkillNames.NESTJS, SkillNames.LARAVEL, SkillNames.FLUTTER, SkillNames.DART, SkillNames.GETX, SkillNames.MYSQL, SkillNames.PRISMA, SkillNames.REDIS, SkillNames.TURBOREPO, SkillNames.PYTHON, SkillNames.VUE, SkillNames.VERCEL, SkillNames.GIT, SkillNames.MONGODB, SkillNames.EXPRESS, SkillNames.FIREBASE, SkillNames.VIM, SkillNames.PRETTIER, SkillNames.NPM];
 export type Experience = {id: number; startDate:string; endDate:string; title:string; company:string; description:string[]; skills:SkillNames[];};
 export const EXPERIENCE: Experience[] = [
   {...{"id":1,"startDate":"04/2026","endDate":"Hiện tại","title":"Full-stack Developer · Sole Architect & Developer","company":"NOVA AI SOLUTIONS CO., LTD · TP. Hồ Chí Minh","description":["Thiết kế kiến trúc và triển khai trọn vẹn nhiều hệ thống kinh doanh từ con số 0.","E-commerce & Logistics: Backend Laravel/MySQL, tự động hóa vận đơn ViettelPost, cập nhật trạng thái thời gian thực; tích hợp VNPay và ZaloPay.","QR-Order SaaS: Multi-tenant booking, hóa đơn điện tử VNPT (SOAP/XML), chấm công Geofencing và thông báo Pusher WebSockets.","AWS S3 Private Storage với Pre-signed URLs, mã hóa AES; triển khai zero-downtime trên Linux VPS bằng Nginx/Apache."]}, skills:[SkillNames.LARAVEL,SkillNames.MYSQL,SkillNames.FLUTTER,SkillNames.AWS,SkillNames.LINUX,SkillNames.NGINX]},

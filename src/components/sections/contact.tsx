@@ -16,7 +16,7 @@ const ContactSection = () => {
   return (
     <SectionWrapper id="contact" className="min-h-screen max-w-7xl mx-auto py-20">
       <SectionHeader id="contact" className="mb-14" title="Cùng hợp tác" />
-      <div className="relative z-10 ml-0 mr-auto w-full max-w-[52rem] px-4 md:px-8">
+      <div className="relative z-10 ml-0 mr-auto w-full max-w-[min(100%,42rem)] px-4 md:px-8">
         <Card className="w-full min-w-0 border-border bg-card text-card-foreground shadow-xl rounded-xl">
           <CardHeader>
             <CardTitle className="text-4xl">Liên hệ</CardTitle>
