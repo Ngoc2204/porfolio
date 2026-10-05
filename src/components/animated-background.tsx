@@ -93,7 +93,7 @@ const KeyboardScene = ({ maxDpr }: { maxDpr: number }) => {
         playPressSound();
         setSelectedSkill(skill);
         selectedSkillRef.current = skill;
-        splineApp.setVariable("heading", skill.label);
+        splineApp.setVariable("heading", skill.sceneLabel ?? skill.label);
         splineApp.setVariable("desc", skill.shortDescription);
       }
     };
@@ -362,7 +362,7 @@ const KeyboardScene = ({ maxDpr }: { maxDpr: number }) => {
 
   useEffect(() => {
     if (!selectedSkill || !splineApp) return;
-    splineApp.setVariable("heading", selectedSkill.label);
+    splineApp.setVariable("heading", selectedSkill.sceneLabel ?? selectedSkill.label);
     splineApp.setVariable("desc", selectedSkill.shortDescription);
   }, [selectedSkill]);
 
