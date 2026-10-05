@@ -23,6 +23,10 @@ export enum SkillNames {
   REDIS = "redis",
   TURBOREPO = "turborepo",
   PYTHON = "python",
+  VUE = "vue",
+  VERCEL = "vercel",
+  GIT = "git",
+  MONGODB = "mongodb",
 }
 export type Skill = { id: number; name: string; label: string; shortDescription: string; color: string; icon: string; };
 export const SKILLS: Record<SkillNames, Skill> = {
@@ -50,12 +54,15 @@ export const SKILLS: Record<SkillNames, Skill> = {
   [SkillNames.REDIS]: {"id":22,"name":"redis","label":"Redis / BullMQ","shortDescription":"Hàng đợi health check, API journeys và caching.","color":"#dc382d","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"},
   [SkillNames.TURBOREPO]: {"id":23,"name":"turborepo","label":"Turborepo","shortDescription":"Tách biệt Next.js Dashboard, NestJS API và worker trong monorepo.","color":"#ef4444","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/turborepo/turborepo-original.svg"},
   [SkillNames.PYTHON]: {"id":24,"name":"python","label":"Python / Machine Learning","shortDescription":"Cá nhân hóa gợi ý hoạt động với Scikit-learn và Pandas.","color":"#ffcf48","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"},
+  [SkillNames.VUE]: {"id":25,"name":"vue","label":"Vue.js","shortDescription":"Progressive JavaScript framework để xây dựng giao diện web component-based.","color":"#42b883","icon":"/assets/logos/vuedotjs-mono.svg"},
+  [SkillNames.VERCEL]: {"id":26,"name":"vercel","label":"Vercel","shortDescription":"Nền tảng triển khai portfolio Next.js với preview deployments và production deployments.","color":"#ffffff","icon":"/assets/logos/vercel-mono.svg"},
+  [SkillNames.GIT]: {"id":27,"name":"git","label":"Git","shortDescription":"Hệ thống quản lý phiên bản phân tán cho theo dõi thay đổi mã nguồn.","color":"#f05032","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"},
+  [SkillNames.MONGODB]: {"id":28,"name":"mongodb","label":"MongoDB","shortDescription":"Cơ sở dữ liệu NoSQL dạng document.","color":"#47a248","icon":"/assets/logos/mongodb-mono.svg"},
 };
-export const ADDITIONAL_SKILLS = [SkillNames.NESTJS, SkillNames.LARAVEL, SkillNames.FLUTTER, SkillNames.DART, SkillNames.GETX, SkillNames.MYSQL, SkillNames.PRISMA, SkillNames.REDIS, SkillNames.TURBOREPO, SkillNames.PYTHON];
+export const ADDITIONAL_SKILLS = [SkillNames.NESTJS, SkillNames.LARAVEL, SkillNames.FLUTTER, SkillNames.DART, SkillNames.GETX, SkillNames.MYSQL, SkillNames.PRISMA, SkillNames.REDIS, SkillNames.TURBOREPO, SkillNames.PYTHON, SkillNames.VUE, SkillNames.VERCEL, SkillNames.GIT, SkillNames.MONGODB];
 export type Experience = {id: number; startDate:string; endDate:string; title:string; company:string; description:string[]; skills:SkillNames[];};
 export const EXPERIENCE: Experience[] = [
   {...{"id":1,"startDate":"04/2026","endDate":"Hiện tại","title":"Full-stack Developer · Sole Architect & Developer","company":"NOVA AI SOLUTIONS CO., LTD · TP. Hồ Chí Minh","description":["Thiết kế kiến trúc và triển khai trọn vẹn nhiều hệ thống kinh doanh từ con số 0.","E-commerce & Logistics: Backend Laravel/MySQL, tự động hóa vận đơn ViettelPost, cập nhật trạng thái thời gian thực; tích hợp VNPay và ZaloPay.","QR-Order SaaS: Multi-tenant booking, hóa đơn điện tử VNPT (SOAP/XML), chấm công Geofencing và thông báo Pusher WebSockets.","AWS S3 Private Storage với Pre-signed URLs, mã hóa AES; triển khai zero-downtime trên Linux VPS bằng Nginx/Apache."]}, skills:[SkillNames.LARAVEL,SkillNames.MYSQL,SkillNames.FLUTTER,SkillNames.AWS,SkillNames.LINUX,SkillNames.NGINX]},
   {...{"id":2,"startDate":"06/2025","endDate":"09/2025","title":"Mobile Developer Intern","company":"QUOC BAO SOFTWARE CO., LTD · TP. Hồ Chí Minh","description":["Xây dựng tính năng mobile đa nền tảng Android/iOS bằng Flutter và GetX.","Thiết kế UI responsive, tích hợp RESTful APIs và tối ưu độ trễ đồng bộ dữ liệu.","Làm việc theo Agile/Scrum, trao đổi kỹ thuật về thiết kế API endpoint."]}, skills:[SkillNames.FLUTTER,SkillNames.DART,SkillNames.GETX]},
 ];
 export const themeDisclaimers = {light:["Đã chuyển sang giao diện sáng."],dark:["Đã chuyển sang giao diện tối."]};
-
