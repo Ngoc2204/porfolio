@@ -4,7 +4,6 @@ import { footer } from "./config";
 import { Button } from "../ui/button";
 import SocialMediaButtons from "../social/social-media-icons";
 import { config } from "@/data/config";
-import PortfolioStats from "../portfolio-stats";
 
 function Footer() {
   return (
@@ -13,7 +12,6 @@ function Footer() {
         ©{" "}
         {config.author}. All rights reserved.
       </p>
-      <PortfolioStats />
       <SocialMediaButtons />
       <nav className="flex gap-4 sm:gap-6 z-10">
         {footer.map((link, index) => {
