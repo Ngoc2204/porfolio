@@ -1,0 +1,61 @@
+export enum SkillNames {
+  JS = "js",
+  TS = "ts",
+  HTML = "html",
+  CSS = "css",
+  REACT = "react",
+  NEXTJS = "nextjs",
+  TAILWIND = "tailwind",
+  NODEJS = "nodejs",
+  POSTGRES = "postgres",
+  GITHUB = "github",
+  LINUX = "linux",
+  DOCKER = "docker",
+  NGINX = "nginx",
+  AWS = "aws",
+  NESTJS = "nestjs",
+  LARAVEL = "laravel",
+  FLUTTER = "flutter",
+  DART = "dart",
+  GETX = "getx",
+  MYSQL = "mysql",
+  PRISMA = "prisma",
+  REDIS = "redis",
+  TURBOREPO = "turborepo",
+  PYTHON = "python",
+}
+export type Skill = { id: number; name: string; label: string; shortDescription: string; color: string; icon: string; };
+export const SKILLS: Record<SkillNames, Skill> = {
+  [SkillNames.JS]: {"id":1,"name":"js","label":"JavaScript","shortDescription":"Lập trình web trong hệ sinh thái TypeScript, React và Node.js.","color":"#f0db4f","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
+  [SkillNames.TS]: {"id":2,"name":"ts","label":"TypeScript","shortDescription":"Xây dựng sản phẩm với Next.js, NestJS và kiến trúc monorepo.","color":"#007acc","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"},
+  [SkillNames.HTML]: {"id":3,"name":"html","label":"HTML5","shortDescription":"Xây dựng cấu trúc nội dung cho giao diện web.","color":"#e34c26","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"},
+  [SkillNames.CSS]: {"id":4,"name":"css","label":"CSS3","shortDescription":"Giao diện responsive và bố cục phù hợp với nhiều thiết bị.","color":"#563d7c","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"},
+  [SkillNames.REACT]: {"id":5,"name":"react","label":"React","shortDescription":"Phát triển giao diện và Web Dashboard cho sản phẩm SaaS.","color":"#61dafb","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
+  [SkillNames.NEXTJS]: {"id":6,"name":"nextjs","label":"Next.js","shortDescription":"Web Dashboard UPLY, tích hợp với REST API NestJS.","color":"#ffffff","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"},
+  [SkillNames.TAILWIND]: {"id":7,"name":"tailwind","label":"Tailwind CSS","shortDescription":"Xây dựng giao diện nhất quán bằng utility classes.","color":"#38bdf8","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"},
+  [SkillNames.NODEJS]: {"id":8,"name":"nodejs","label":"Node.js","shortDescription":"Nền tảng backend TypeScript và background workers.","color":"#6cc24a","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"},
+  [SkillNames.POSTGRES]: {"id":9,"name":"postgres","label":"PostgreSQL","shortDescription":"Phân lập dữ liệu đa người thuê với Prisma ORM.","color":"#336791","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"},
+  [SkillNames.GITHUB]: {"id":10,"name":"github","label":"GitHub","shortDescription":"Mã nguồn và các dự án tại github.com/Ngoc2204.","color":"#ffffff","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"},
+  [SkillNames.LINUX]: {"id":11,"name":"linux","label":"Linux","shortDescription":"Triển khai zero-downtime trên Linux VPS với Nginx/Apache.","color":"#ffffff","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"},
+  [SkillNames.DOCKER]: {"id":12,"name":"docker","label":"Docker Compose","shortDescription":"Đóng gói dịch vụ và triển khai nền tảng SaaS.","color":"#2496ed","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"},
+  [SkillNames.NGINX]: {"id":13,"name":"nginx","label":"Nginx / Apache / Caddy","shortDescription":"Vận hành reverse proxy và Caddy Auto SSL.","color":"#008000","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"},
+  [SkillNames.AWS]: {"id":14,"name":"aws","label":"AWS S3","shortDescription":"Private Storage, Pre-signed URLs và mã hóa dữ liệu.","color":"#ff9900","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"},
+  [SkillNames.NESTJS]: {"id":15,"name":"nestjs","label":"NestJS","shortDescription":"REST API cho nền tảng giám sát website và API UPLY.","color":"#e0234e","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"},
+  [SkillNames.LARAVEL]: {"id":16,"name":"laravel","label":"Laravel / PHP","shortDescription":"Backend E-commerce, QR-Order SaaS và quản lý điểm rèn luyện.","color":"#ff2d20","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"},
+  [SkillNames.FLUTTER]: {"id":17,"name":"flutter","label":"Flutter","shortDescription":"Ứng dụng Android/iOS và app quản lý điểm rèn luyện.","color":"#54c5f8","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"},
+  [SkillNames.DART]: {"id":18,"name":"dart","label":"Dart","shortDescription":"Lập trình ứng dụng đa nền tảng với Flutter.","color":"#0175c2","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"},
+  [SkillNames.GETX]: {"id":19,"name":"getx","label":"GetX","shortDescription":"Quản lý trạng thái trong các ứng dụng Flutter.","color":"#8a4dce","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"},
+  [SkillNames.MYSQL]: {"id":20,"name":"mysql","label":"MySQL","shortDescription":"Thiết kế và tối ưu cơ sở dữ liệu quan hệ.","color":"#4479a1","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"},
+  [SkillNames.PRISMA]: {"id":21,"name":"prisma","label":"Prisma ORM","shortDescription":"Truy cập PostgreSQL và thực hiện Row-level Multi-tenancy.","color":"#8ba0b4","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg"},
+  [SkillNames.REDIS]: {"id":22,"name":"redis","label":"Redis / BullMQ","shortDescription":"Hàng đợi health check, API journeys và caching.","color":"#dc382d","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"},
+  [SkillNames.TURBOREPO]: {"id":23,"name":"turborepo","label":"Turborepo","shortDescription":"Tách biệt Next.js Dashboard, NestJS API và worker trong monorepo.","color":"#ef4444","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/turborepo/turborepo-original.svg"},
+  [SkillNames.PYTHON]: {"id":24,"name":"python","label":"Python / Machine Learning","shortDescription":"Cá nhân hóa gợi ý hoạt động với Scikit-learn và Pandas.","color":"#ffcf48","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"},
+};
+export const ADDITIONAL_SKILLS = [SkillNames.NESTJS, SkillNames.LARAVEL, SkillNames.FLUTTER, SkillNames.DART, SkillNames.GETX, SkillNames.MYSQL, SkillNames.PRISMA, SkillNames.REDIS, SkillNames.TURBOREPO, SkillNames.PYTHON];
+export type Experience = {id: number; startDate:string; endDate:string; title:string; company:string; description:string[]; skills:SkillNames[];};
+export const EXPERIENCE: Experience[] = [
+  {...{"id":1,"startDate":"04/2026","endDate":"Hiện tại","title":"Full-stack Developer · Sole Architect & Developer","company":"NOVA AI SOLUTIONS CO., LTD · TP. Hồ Chí Minh","description":["Thiết kế kiến trúc và triển khai trọn vẹn nhiều hệ thống kinh doanh từ con số 0.","E-commerce & Logistics: Backend Laravel/MySQL, tự động hóa vận đơn ViettelPost, cập nhật trạng thái thời gian thực; tích hợp VNPay và ZaloPay.","QR-Order SaaS: Multi-tenant booking, hóa đơn điện tử VNPT (SOAP/XML), chấm công Geofencing và thông báo Pusher WebSockets.","AWS S3 Private Storage với Pre-signed URLs, mã hóa AES; triển khai zero-downtime trên Linux VPS bằng Nginx/Apache."]}, skills:[SkillNames.LARAVEL,SkillNames.MYSQL,SkillNames.FLUTTER,SkillNames.AWS,SkillNames.LINUX,SkillNames.NGINX]},
+  {...{"id":2,"startDate":"06/2025","endDate":"09/2025","title":"Mobile Developer Intern","company":"QUOC BAO SOFTWARE CO., LTD · TP. Hồ Chí Minh","description":["Xây dựng tính năng mobile đa nền tảng Android/iOS bằng Flutter và GetX.","Thiết kế UI responsive, tích hợp RESTful APIs và tối ưu độ trễ đồng bộ dữ liệu.","Làm việc theo Agile/Scrum, trao đổi kỹ thuật về thiết kế API endpoint."]}, skills:[SkillNames.FLUTTER,SkillNames.DART,SkillNames.GETX]},
+];
+export const themeDisclaimers = {light:["Đã chuyển sang giao diện sáng."],dark:["Đã chuyển sang giao diện tối."]};
+
