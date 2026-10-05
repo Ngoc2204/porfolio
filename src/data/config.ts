@@ -11,7 +11,7 @@ const config = {
   phone: "0382583723",
   phoneLabel: "0382 583 723",
   site: "https://ngoc2204.github.io/nguyentatngoc.github.io",
-  resume: "/NGUYENTATNGOC_FULLSTACK.pdf",
+  resume: "/Nguyen_Tat_Ngoc_FullStack_Engineer_CV.pdf",
   githubUsername: "Ngoc2204",
   githubRepo: "",
   get ogImg() { return this.site + "/assets/img.jpg"; },
@@ -24,4 +24,3 @@ const config = {
   },
 };
 export { config };
-

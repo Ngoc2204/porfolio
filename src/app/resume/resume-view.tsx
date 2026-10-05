@@ -7,7 +7,7 @@ import { Download, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ResumeDoodle from "./resume-doodle";
 
-const RESUME_PATH = "/NGUYENTATNGOC_FULLSTACK.pdf";
+const RESUME_PATH = "/Nguyen_Tat_Ngoc_FullStack_Engineer_CV.pdf";
 
 export default function ResumeView() {
   return (
